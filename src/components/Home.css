@@ -1,6 +1,7 @@
 .home-container {
   text-align: center;
   padding: 20px;
+  min-height: 100vh;
 }
 
 .features-container {
@@ -127,6 +128,51 @@
   font-size: 14px;
 }
 
+.transition-enter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.transition-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.transition-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.transition-exit-active {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.view-btn {
+  text-decoration: none;
+  background-color: #522fa6;
+  border-width: 0px;
+  border-radius: 6px;
+  color: whitesmoke;
+}
+
+.view-btn:hover {
+  background-color: #a62f2f;
+}
+
+.pagination-btn:hover{
+background-color: white;
+color: black;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 /* Tablet View */
 @media screen and (max-width: 768px) {
   .features-container {
@@ -138,13 +184,21 @@
   }
 
   .movie-description {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
   }
 
   .movie-list {
     grid-template-columns: repeat(2, 1fr);
     /* Two columns for tablet view */
+  }
+
+  .search-btn {
+    border-radius: 10px;
+    padding: 8px;
+    width: auto;
+    height: 42px;
+    border-width: 0px;
   }
 }
 
@@ -189,7 +243,6 @@
   .search-btn {
     border-radius: 10px;
     padding: 8px;
-    width: 50%;
     height: 42px;
     border-width: 0px;
   }
@@ -204,48 +257,11 @@
 
   .search-input-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0px;
   }
 
-}
-
-.transition-enter {
-  transform: translateY(100%);
-  opacity: 0;
-}
-
-.transition-enter-active {
-  transform: translateY(0);
-  opacity: 1;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.transition-exit {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.transition-exit-active {
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.view-btn {
-  text-decoration: none;
-  background-color: #522fa6;
-  border-width: 0px;
-  border-radius: 6px;
-  color: whitesmoke;
-}
-
-.view-btn:hover {
-  background-color: #a62f2f;
-}
-
-.rating-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  .pagination-btn {
+    width: auto; 
+  }
 }
