@@ -43,7 +43,7 @@ Display YouTube trailers for selected movies (when available).
 The application is designed to adapt and provide an optimal user experience on various devices, such as desktops, tablets, and smartphones.
 
 <h3>🟢Cross-Platform Compatibility:</h3>
-The travel planner app is designed to work across multiple platforms and operating systems, including Windows, macOS, Linux, iOS, and Android. It leverages web technologies or platform-specific frameworks to ensure maximum accessibility.
+The MOVIE SEARCH APP is designed to work across multiple platforms and operating systems, including Windows, macOS, Linux, iOS, and Android. It leverages web technologies or platform-specific frameworks to ensure maximum accessibility.
 
 <h1>Packages</h1>
 🟡npx create-react-app<br/>
